@@ -1,6 +1,5 @@
 var grafico09 = {
-  {
-  const spec = {
+  spec: {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
       "text": "Dualidade de Gestão: Localização × Tipo de Rede",
@@ -69,10 +68,6 @@ var grafico09 = {
       }
     ]
   }
+}; 
 
-  const div = document.createElement("div")
-  await embed(div, spec, { actions: false })
-  return div
-}
-};
-vegaEmbed('#Dualidade_de_Gestão:_Localização_e_Tipo_de_Rede', grafico09);
+vegaEmbed('#Dualidade_de_Gestão:_Localização_e_Tipo_de_Rede', grafico09.spec);
